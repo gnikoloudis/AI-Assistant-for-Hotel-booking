@@ -1,0 +1,1255 @@
+{
+    "classes": [
+        "EMAIL",
+        "NUMBER OF ROOMS",
+        "REFERENCE DATES",
+        "DEPARTURE TIME",
+        "GUEST TYPE",
+        "PHONE",
+        "PROMOTIONAL CODE",
+        "CHECKIN DATE",
+        "NUMBER OF GUESTS",
+        "DURATION",
+        "EVENT",
+        "BUSINESS",
+        "TELEPHONE",
+        "SPECIAL REQUEST",
+        "PERSON",
+        "GUEST",
+        "ARRIVAL TIME",
+        "ACTION",
+        "ROOM TYPE",
+        "ROOM PRICE",
+        "QUESTION",
+        "CHECKOUT DATE",
+        "COMPANY"
+    ],
+    "text": [],
+    "annotations": [
+        [
+            "I would like to book a room at your hotel for 2 Adults and 1 Kid, arriving on 12th July 2022 and checking out on the 14th July 2022.\r",
+            {
+                "entities": [
+                    [
+                        21,
+                        27,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        46,
+                        54,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        59,
+                        64,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        78,
+                        92,
+                        "CHECKIN DATE"
+                    ],
+                    [
+                        117,
+                        131,
+                        "CHECKOUT DATE"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I would like to reserve a double room for 2 nights with breakfast on 20 and 21 of March. Could I have a quiet room with a beach view if possible, please?\r",
+            {
+                "entities": [
+                    [
+                        24,
+                        37,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        42,
+                        50,
+                        "DURATION"
+                    ],
+                    [
+                        56,
+                        65,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        69,
+                        88,
+                        "REFERENCE DATES"
+                    ],
+                    [
+                        104,
+                        114,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        120,
+                        132,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I will arrive at about 3 p.m and I have a promotional code (HUI8PQ). Please can you confirm that it is $80 per night with breakfast included?\r",
+            {
+                "entities": [
+                    [
+                        17,
+                        28,
+                        "ARRIVAL TIME"
+                    ],
+                    [
+                        42,
+                        67,
+                        "PROMOTIONAL CODE"
+                    ],
+                    [
+                        103,
+                        116,
+                        "ROOM PRICE"
+                    ],
+                    [
+                        122,
+                        140,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Anna Jones",
+            {
+                "entities": [
+                    [
+                        0,
+                        10,
+                        "PERSON"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I would like to reserve a room for 4 days and for 1 people. I will arrive at 1pm on 25 – 26 Jan 2024. Please book for me a quite room and city view with have breakfast including the room.\r",
+            {
+                "entities": [
+                    [
+                        35,
+                        41,
+                        "DURATION"
+                    ],
+                    [
+                        50,
+                        59,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        74,
+                        80,
+                        "ARRIVAL TIME"
+                    ],
+                    [
+                        84,
+                        101,
+                        "REFERENCE DATES"
+                    ],
+                    [
+                        123,
+                        133,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        138,
+                        147,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        158,
+                        177,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "How much is it for 1 night? Please confirm this booking and tell me know these information.\r",
+            {
+                "entities": [
+                    [
+                        0,
+                        26,
+                        "QUESTION"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Lucie",
+            {
+                "entities": [
+                    [
+                        0,
+                        5,
+                        "PERSON"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I would like to reserved a double room in 3 days and 2 nights exclude breakfast next month from 22 to 25 of october. Could i have a room with large space for my kids, if possible?\r",
+            {
+                "entities": [
+                    [
+                        25,
+                        38,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        42,
+                        48,
+                        "REFERENCE DATES"
+                    ],
+                    [
+                        53,
+                        61,
+                        "DURATION"
+                    ],
+                    [
+                        62,
+                        79,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        80,
+                        116,
+                        "REFERENCE DATES"
+                    ],
+                    [
+                        142,
+                        165,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I will arived at 11am, could you help me to reserved a restaurant near the hotel for lunch because my family want to have a simple meal then go back to hotel for rest after a 5 hours sitting in car\r",
+            {
+                "entities": [
+                    [
+                        14,
+                        21,
+                        "ARRIVAL TIME"
+                    ],
+                    [
+                        44,
+                        90,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Please can you confirm that 500$ per night excluding breakfast\r",
+            {
+                "entities": [
+                    [
+                        28,
+                        42,
+                        "ROOM PRICE"
+                    ],
+                    [
+                        43,
+                        62,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Karen",
+            {
+                "entities": [
+                    [
+                        0,
+                        5,
+                        "PERSON"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I would like to reserve a single room for three days and two nights with breakfast. Could I have a room with a view if possible, please?\r",
+            {
+                "entities": [
+                    [
+                        24,
+                        37,
+                        "ROOM TYPE"
+                    ],
+                    [
+                        42,
+                        52,
+                        "DURATION"
+                    ],
+                    [
+                        57,
+                        67,
+                        "DURATION"
+                    ],
+                    [
+                        73,
+                        83,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        99,
+                        115,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Please can you confirm that it is 100000 euro per day with breakfast included?\r",
+            {
+                "entities": [
+                    [
+                        34,
+                        53,
+                        "ROOM PRICE"
+                    ],
+                    [
+                        59,
+                        77,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Please could you confirm the booking?\r",
+            {
+                "entities": [
+                    [
+                        0,
+                        37,
+                        "QUESTION"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Contact me 0637 123456\r",
+            {
+                "entities": [
+                    [
+                        11,
+                        22,
+                        "PHONE"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Tom Jones",
+            {
+                "entities": [
+                    [
+                        0,
+                        9,
+                        "PERSON"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I am interested in reserving a room at your hotel for 2 adults and 1 child, with a check-in date of July 12, 2022, and a check-out date of July 14, 2022.\r",
+            {
+                "entities": [
+                    [
+                        54,
+                        55,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        56,
+                        62,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        67,
+                        68,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        69,
+                        74,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        100,
+                        113,
+                        "CHECKIN DATE"
+                    ],
+                    [
+                        139,
+                        152,
+                        "CHECKOUT DATE"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Kindly provide me with information on the available room types and rates for those dates.\r",
+            {
+                "entities": [
+                    [
+                        23,
+                        88,
+                        "QUESTION"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I am looking to make a reservation for a room at your hotel for 2 adults and 1 child, checking in on July 12, 2022, and checking out on July 14, 2022.\r",
+            {
+                "entities": [
+                    [
+                        39,
+                        45,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        64,
+                        65,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        66,
+                        72,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        77,
+                        78,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        79,
+                        84,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        101,
+                        114,
+                        "CHECKIN DATE"
+                    ],
+                    [
+                        136,
+                        149,
+                        "CHECKIN DATE"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Could you please advise on the room options and rates for the specified dates?\r",
+            {
+                "entities": [
+                    [
+                        17,
+                        43,
+                        "QUESTION"
+                    ],
+                    [
+                        48,
+                        77,
+                        "QUESTION"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I'm interested in booking a room for 2 adults and 1 child at your hotel, arriving on July 12, 2022, and departing on July 14, 2022.\r",
+            {
+                "entities": [
+                    [
+                        26,
+                        32,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        37,
+                        38,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        39,
+                        45,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        50,
+                        51,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        52,
+                        57,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        85,
+                        98,
+                        "CHECKIN DATE"
+                    ],
+                    [
+                        117,
+                        130,
+                        "CHECKOUT DATE"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I would like to secure a room reservation for 2 adults and 1 child at your hotel, arriving on July 12, 2022, and departing on July 14, 2022.\r",
+            {
+                "entities": [
+                    [
+                        23,
+                        29,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        46,
+                        47,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        48,
+                        54,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        59,
+                        60,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        61,
+                        66,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        94,
+                        107,
+                        "CHECKIN DATE"
+                    ],
+                    [
+                        126,
+                        139,
+                        "CHECKIN DATE"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Please provide details on the room choices and pricing available during that period.\r",
+            {
+                "entities": [
+                    [
+                        30,
+                        83,
+                        "QUESTION"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I am interested in reserving a room for 2 Adults and 1 Child at your hotel from July 12th to July 14th, 2022.\r",
+            {
+                "entities": [
+                    [
+                        40,
+                        41,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        42,
+                        48,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        53,
+                        54,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        55,
+                        60,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        80,
+                        89,
+                        "CHECKIN DATE"
+                    ],
+                    [
+                        93,
+                        108,
+                        "CHECKOUT DATE"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Could you please provide me with information on the available room types and rates for the specified dates?\r",
+            {
+                "entities": [
+                    [
+                        33,
+                        72,
+                        "QUESTION"
+                    ],
+                    [
+                        77,
+                        106,
+                        "QUESTION"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I am reaching out to inquire about booking a room for 2 Adults and 1 Child at your hotel from the 12th to the 14th of July, 2022.\r",
+            {
+                "entities": [
+                    [
+                        54,
+                        55,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        56,
+                        62,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        67,
+                        68,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        69,
+                        74,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        98,
+                        129,
+                        "REFERENCE DATES"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Kindly advise on the room options and rates that would be suitable for my stay during those dates.\r",
+            {
+                "entities": [
+                    [
+                        21,
+                        33,
+                        "QUESTION"
+                    ],
+                    [
+                        38,
+                        43,
+                        "QUESTION"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I am looking to make a reservation for a room accommodating 2 Adults and 1 Child at your hotel, with the arrival date set for July 12th, 2022, and departure on July 14th, 2022.\r",
+            {
+                "entities": [
+                    [
+                        39,
+                        45,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        60,
+                        61,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        62,
+                        68,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        73,
+                        74,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        75,
+                        80,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        126,
+                        141,
+                        "CHECKIN DATE"
+                    ],
+                    [
+                        160,
+                        175,
+                        "CHECKIN DATE"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I trust you are doing well. I am reaching out to inquire about the availability of two rooms at your hotel on December 31st. Our long-awaited trip to the hills is nearing, and we are eagerly anticipating our stay at your establishment.\r",
+            {
+                "entities": [
+                    [
+                        83,
+                        92,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        110,
+                        124,
+                        "CHECKIN DATE"
+                    ],
+                    [
+                        129,
+                        159,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I hope you are having a great day. I am reaching out to check the availability of two rooms at your hotel for December 31st. We have planned our hill trip in advance and are excited about our upcoming stay at your property.\r",
+            {
+                "entities": [
+                    [
+                        133,
+                        154,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "1. Subject: Room Reservation Request for 20-21 March at ABC Hotel\r",
+            {
+                "entities": [
+                    [
+                        41,
+                        52,
+                        "REFERENCE DATES"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I am reaching out to make a reservation request for a double room with breakfast for 2 nights on the 20th and 21st of March. If available, I would greatly appreciate a quiet room with a beach view.\r",
+            {
+                "entities": [
+                    [
+                        85,
+                        93,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        101,
+                        124,
+                        "REFERENCE DATES"
+                    ],
+                    [
+                        168,
+                        196,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "My anticipated arrival time is around 3 p.m, and I will be utilizing a promotional code (HUI8PQ). Could you kindly confirm that the rate is $80 per night inclusive of breakfast?\r",
+            {
+                "entities": [
+                    [
+                        31,
+                        43,
+                        "ARRIVAL TIME"
+                    ],
+                    [
+                        71,
+                        96,
+                        "PROMOTIONAL CODE"
+                    ],
+                    [
+                        140,
+                        153,
+                        "ROOM PRICE"
+                    ],
+                    [
+                        154,
+                        176,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I am interested in booking a room at your hotel for the dates of 12th July – 14th July 2022. I am looking for a room that can accommodate 2 adults and 1 child. If you could provide me with the best room type and rate, that would be greatly appreciated. Thank you for your time.\r",
+            {
+                "entities": [
+                    [
+                        27,
+                        33,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        65,
+                        74,
+                        "CHECKIN DATE"
+                    ],
+                    [
+                        77,
+                        92,
+                        "CHECKOUT DATE"
+                    ],
+                    [
+                        138,
+                        139,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        140,
+                        146,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        151,
+                        152,
+                        "CHECKOUT DATE"
+                    ],
+                    [
+                        153,
+                        159,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        189,
+                        216,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I hope this email finds you well. We are writing to inquire about availability for two rooms in your hotel on December 31st. Our trip to the hills has been planned for some time now and we are very much looking forward to our stay with you.\r",
+            {
+                "entities": [
+                    [
+                        83,
+                        92,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        110,
+                        124,
+                        "CHECKIN DATE"
+                    ]
+                ]
+            }
+        ],
+        [
+            "John Doe",
+            {
+                "entities": [
+                    [
+                        0,
+                        8,
+                        "PERSON"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I would like to book a room for 2 Adults and 1 Kid, Arriving on 12th July 2022 and check out on the 14th July. Please provide the details of packages.\r",
+            {
+                "entities": [
+                    [
+                        32,
+                        33,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        34,
+                        40,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        45,
+                        46,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        47,
+                        50,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        64,
+                        78,
+                        "CHECKIN DATE"
+                    ],
+                    [
+                        100,
+                        110,
+                        "CHECKOUT DATE"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I am interested in booking a room at your hotel for the dates of 12th-14th July 2022. I would need space for 2 adults and 1 child. Could you please provide me with more information on your rooms and rates? I look forward to hearing from you soon.\r",
+            {
+                "entities": [
+                    [
+                        65,
+                        85,
+                        "CHECKOUT DATE"
+                    ],
+                    [
+                        109,
+                        110,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        111,
+                        117,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        122,
+                        123,
+                        "NUMBER OF GUESTS"
+                    ],
+                    [
+                        124,
+                        130,
+                        "GUEST TYPE"
+                    ],
+                    [
+                        189,
+                        204,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I am interested in reserving an accessible single room for two nights with breakfast on the 25th of June. I would like a quiet room with a pool view, if possible.\r",
+            {
+                "entities": [
+                    [
+                        32,
+                        42,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        43,
+                        54,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        59,
+                        69,
+                        "DURATION"
+                    ],
+                    [
+                        70,
+                        84,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        92,
+                        105,
+                        "CHECKIN DATE"
+                    ],
+                    [
+                        121,
+                        148,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I would like to book a family room at your hotel where we will stay during the tour. Please book a room with a double bed and email me the details.\r",
+            {
+                "entities": [
+                    [
+                        21,
+                        22,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        23,
+                        34,
+                        "ROOM TYPE"
+                    ],
+                    [
+                        55,
+                        84,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        109,
+                        121,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I would like to reserve an accessible single room for two nights with breakfast on the 22 and 23 of April. Could I have a quiet room with a view if possible, please?\r",
+            {
+                "entities": [
+                    [
+                        27,
+                        37,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        38,
+                        49,
+                        "ROOM TYPE"
+                    ],
+                    [
+                        54,
+                        64,
+                        "DURATION"
+                    ],
+                    [
+                        70,
+                        79,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        87,
+                        106,
+                        "REFERENCE DATES"
+                    ],
+                    [
+                        122,
+                        144,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I will arrive at about 10 p.m. and I have an early meeting the next morning, so please could you leave an iron and ironing board in the room?\r",
+            {
+                "entities": [
+                    [
+                        7,
+                        30,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        45,
+                        75,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        103,
+                        128,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I have a promotional code (MH2219). Please can you confirm that it is £80 per night with breakfast included?\r",
+            {
+                "entities": [
+                    [
+                        9,
+                        34,
+                        "PROMOTIONAL CODE"
+                    ],
+                    [
+                        70,
+                        83,
+                        "ROOM PRICE"
+                    ],
+                    [
+                        89,
+                        107,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "David Mathews",
+            {
+                "entities": [
+                    [
+                        0,
+                        13,
+                        "PERSON"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I would like to reserve a single room for three nights wtih breakfast, dinner and lunch from 31 October 2024 to 2nd November 2024. \r",
+            {
+                "entities": [
+                    [
+                        24,
+                        37,
+                        "NUMBER OF ROOMS"
+                    ],
+                    [
+                        42,
+                        54,
+                        "DURATION"
+                    ],
+                    [
+                        55,
+                        69,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        71,
+                        77,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        82,
+                        87,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        93,
+                        108,
+                        "CHECKIN DATE"
+                    ],
+                    [
+                        112,
+                        129,
+                        "CHECKOUT DATE"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Could I have a quiet room with an iron and ironing board please ?\r",
+            {
+                "entities": [
+                    [
+                        13,
+                        25,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        31,
+                        50,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "I will arrive on 31 October 2024 at 12 O'Clock and I have a meeting on 1er and 2nd November and I am going to finish at 12 O'Clock on 2nd November so I will go at hotel after the meeting.\r",
+            {
+                "entities": [
+                    [
+                        17,
+                        46,
+                        "ARRIVAL TIME"
+                    ],
+                    [
+                        60,
+                        91,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        120,
+                        146,
+                        "DEPARTURE TIME"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Could you give me the price of the night with breakfast, dinner and lunch included ?\r",
+            {
+                "entities": [
+                    [
+                        41,
+                        55,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        57,
+                        63,
+                        "SPECIAL REQUEST"
+                    ],
+                    [
+                        68,
+                        73,
+                        "SPECIAL REQUEST"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Could you confirm the booking please ?. If You need more information, You can contact me on +075xxxxxxx or xxxxxxxx@gmail.com .\r",
+            {
+                "entities": [
+                    [
+                        92,
+                        103,
+                        "PHONE"
+                    ],
+                    [
+                        107,
+                        125,
+                        "EMAIL"
+                    ]
+                ]
+            }
+        ],
+        [
+            "Maria Jones",
+            {
+                "entities": [
+                    [
+                        0,
+                        11,
+                        "PERSON"
+                    ]
+                ]
+            }
+        ]
+    ]
+}

@@ -1,0 +1,8 @@
+Hello Reservation,
+
+I would like to book a room at your hotel for 2 Adults and 1 Kid, arriving on 12th July 2022 and checking out on the 14th July 2022.
+
+Please let me know what the best room type and rate would be for that timeframe.
+
+Thank you,
+George
