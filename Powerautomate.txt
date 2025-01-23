@@ -1,0 +1,84 @@
+
+FUNCTION Main_copy GLOBAL
+    SET URL TO $'''http://127.0.0.1:5000/read-email'''
+    SET OutlookEmailAccount TO $'''email@outlook.com'''
+    SET OutlookEmailfolder TO $'''Reservations'''
+    Outlook.Launch Instance=> OutlookInstance
+    Outlook.RetrieveEmailMessages.RetrieveEmails Instance: OutlookInstance Account: OutlookEmailAccount MailFolder: OutlookEmailfolder EmailsToRetrieve: Outlook.RetrieveMessagesMode.All MarkAsRead: False ReadBodyAsHtml: False Messages=> RetrievedEmails
+    LOOP FOREACH CurrentItem IN RetrievedEmails
+        Text.ConvertDateTimeToText.FromCustomDateTime DateTime: CurrentItem.Date CustomFormat: $'''MM/d/yyyy H:MM:ss''' Result=> FormattedDateTime
+        Variables.ConvertJsonToCustomObject Json: $'''{
+   \"payload\":{
+                \"message\":\"%CurrentItem.BodyText%\",
+                \"email_address\":\"%CurrentItem['From']%\",
+                \"subject\":\"%CurrentItem.Subject%\",
+                 \"date\":\"%FormattedDateTime%\"
+                    }
+}''' CustomObject=> JsonPayloadObject
+        Variables.ConvertCustomObjectToJson CustomObject: JsonPayloadObject Json=> PayloadObject
+        Web.InvokeWebService.InvokeWebServicePost Url: URL Accept: $'''application/json''' ContentType: $'''application/json''' RequestBody: PayloadObject ConnectionTimeout: 30 FollowRedirection: False ClearCookies: False FailOnErrorStatus: False EncodeRequestBody: False UserAgent: $'''Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.21) Gecko/20100312 Firefox/3.6''' Encoding: Web.Encoding.AutoDetect AcceptUntrustedCertificates: False TrimRequestBody: True ResponseHeaders=> WebServiceResponseHeaders Response=> WebServiceResponse StatusCode=> StatusCode
+        IF StatusCode = 200 THEN
+            Variables.ConvertJsonToCustomObject Json: WebServiceResponse CustomObject=> JsonResponseObject
+            @@statistics_Input_Text: '2'
+@@statistics_Input_ChoiceSet: '1'
+@@statistics_Action_Submit: '1'
+Display.ShowCustomDialog CardTemplateJson: '''{
+  \"type\": \"AdaptiveCard\",
+  \"version\": \"1.4\",
+  \"id\": \"AdaptiveCard\",
+  \"body\": [
+    {
+      \"type\": \"Input.Text\",
+      \"id\": \"Email\",
+      \"value\": \"${Email_Value}\",
+      \"label\": \"${Email_Label}\"
+    },
+    {
+      \"type\": \"Input.Text\",
+      \"id\": \"Response\",
+      \"value\": \"${Response_Value}\",
+      \"label\": \"${Response_Label}\"
+    },
+    {
+      \"type\": \"Input.ChoiceSet\",
+      \"id\": \"CorrectOrFalse\",
+      \"style\": \"expanded\",
+      \"isMultiSelect\": false,
+      \"choices\": [
+        {
+          \"title\": \"Correct\",
+          \"value\": \"True\"
+        },
+        {
+          \"title\": \"False\",
+          \"value\": \"False\"
+        }
+      ],
+      \"label\": \"${CorrectOrFalse_Label}\"
+    }
+  ],
+  \"actions\": [
+    {
+      \"type\": \"Action.Submit\",
+      \"id\": \"Submit\",
+      \"title\": \"${Submit_Title}\"
+    }
+  ],
+  \"FormTitle\": \"${AdaptiveCard_FormTitle}\"
+}''' CustomFormData=> CustomFormData ButtonPressed=> ButtonPressed @AdaptiveCard_FormTitle: $'''Respose Evaluation Form''' @Email_Label: $'''Email''' @Email_Value: CurrentItem.BodyText @Response_Label: $'''Response''' @Response_Value: JsonResponseObject @CorrectOrFalse_Label: $'''Correct Or False''' @Submit_Title: $'''Ok'''
+            SET CorrectOrFalse TO CustomFormData.CorrectOrFalse
+            IF CorrectOrFalse = True THEN
+                Text.CreateHTMLContent HtmlEditor: $'''<p>Dear %CurrentItem['From']%</p>
+<p>%JsonResponseObject%</p>
+<p>Thanks a lot</p>
+<p>Hotel Reservation Team</p>
+<p>%CurrentItem.BodyText%</p>
+<table height=\"100\" cellspacing=\"0\" width=\"100%%\" border=\"0\">
+<tbody>
+<tr>
+<td></td></tr></tbody></table>''' HtmlContent=> HtmlEmailContent
+                Outlook.SendEmailThroughOutlook.SendEmail Instance: OutlookInstance Account: OutlookEmailAccount SendTo: CurrentItem['From'] Subject: $'''Re: %CurrentItem['Subject']%''' Body: HtmlEmailContent IsBodyHtml: True IsDraft: True
+            END
+        END
+    END
+END FUNCTION
