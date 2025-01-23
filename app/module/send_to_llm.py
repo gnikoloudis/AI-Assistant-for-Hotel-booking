@@ -37,8 +37,13 @@ def send_to_llm(message,language,date):
 
     prompt = f"""
     The language of the request is {language} 
-    If the complete checkin date is not provided then assume the checkin date to be {now}.
-
+    If the complete checkin date is not provided then calculate  the checkin date based on the date {now}.
+    If the complete checkout date is not provided then calculate  the checkout date based on the date {now}.
+    If the number of rooms is not provided then calculate the number of rooms based on the number of guests.
+    If the number of guests is not provided then calculate the number of guests based on the number of rooms.
+    If the number of beds is not provided then calculate the number of beds based on the number of rooms.
+    Retrieve the checin and checkout dates from the email.
+    
     The possible room configurations you can offer are:
         Room type 1: 2 bedrooms with 2 twin beds each
         Room type 2: 1 bedrooms with 1 twin bed each
@@ -55,10 +60,13 @@ def send_to_llm(message,language,date):
         "stream": False,
         "format": Reservation.model_json_schema(),
         "options": {
-            "temperature": 0.2,
-            "top_p": 0.5,
-            "top_k": 40,
-            "max_tokens": 10000
+            "temperature": 0.7,
+            "top_p": 0.2,
+            "top_k": 10,
+            "max_tokens": 10000,
+            "num_gpu": 2,
+            "main_gpu": 0,
+            "num_thread": 8
         }
     }
 
